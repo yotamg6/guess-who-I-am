@@ -44,12 +44,14 @@ const celebrities = {
       "american",
       "usa",
       "woman",
+      "female",
     ],
   },
   c3: {
     fullName: "steve jobs",
     keyWords: [
       "man",
+      "male",
       "buiseness",
       "buisenessman",
       "media",
@@ -69,6 +71,7 @@ const celebrities = {
     keyWords: [
       "singer",
       "woman",
+      "female",
       "usa",
       "american",
       "pop",
@@ -95,6 +98,7 @@ const celebrities = {
       "politician",
       "white",
       "man",
+      "male",
     ],
   },
   c6: {
@@ -109,6 +113,7 @@ const celebrities = {
       "american",
       "usa",
       "crazy",
+      "female",
     ],
   },
 };
