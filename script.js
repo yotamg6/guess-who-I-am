@@ -142,12 +142,12 @@ function getInput(e) {
     clickCounter++;
   } else if (guess && clickCounter > 0 && time) {
     handleGuesses(guess);
-  } else if (time == null) {
+  } else if (clickCounter == null) {
     indicator = "wrong";
     toggleMessage(indicator);
     messageBox.textContent =
       "THE GAME IS OVER. PLEASE PRESS THE RESTART BUTTON TO PLAY AGAIN";
-  } else {
+  } else if (clickCounter == 0) {
     messageBox.textContent =
       "PLEASE ASK A QUESTION \nOR GUESS WHO THE CELEBRITY IS";
     indicator = "wrong";
@@ -225,6 +225,7 @@ function gameOver() {
   askInputField.style.display = "none";
   btnAsk.style.display = "none";
   timerBox.style.display = "none";
+  clickCounter = null;
   time = null;
 }
 
@@ -244,6 +245,7 @@ function reset() {
   clickCounter = 0;
   timer = null;
   ranNum = null;
+  time = null;
 
   timerDisplayed.textContent = "02:00";
   askInputField.style.display = "block";
