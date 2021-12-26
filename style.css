@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(
+    to left,
+    rgba(20, 54, 224, 0.644),
+    rgba(24, 233, 181, 0.89)
+  );
+  display: flex;
+  align-items: center;
+  font-family: "Press Start 2P", sans-serif;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-left: 20px;
+}
+.instructions {
+  margin-bottom: 170px;
+  background-color: rgb(255, 130, 108);
+  color: rgb(3, 119, 197);
+  padding: 10px;
+}
+.central {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  text-align: center;
+}
+h1 {
+  color: rgb(61, 82, 199, 0.52);
+}
+
+.right {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(43, 128, 226);
+  padding: 10px;
+}
+.timeIsUp {
+}
+.alert {
+  background-color: black;
+  color: rgb(255, 89, 89);
+  padding: 20px;
+  line-height: 30px;
+}
+.posNotif {
+  background-color: chartreuse;
+  padding: 20px;
+  line-height: 30px;
+}
+@-webkit-keyframes greenWhite {
+  0% {
+    background-color: white;
+  }
+  50% {
+    background-color: white;
+  }
+  51% {
+    background-color: green;
+  }
+  100% {
+    background-color: green;
+  }
+}
+
+.winnerNotif {
+  background-color: green;
+  -webkit-animation-name: greenWhite;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 2s;
+  padding: 20px;
+  line-height: 30px;
+}
+
+strong {
+  background-color: black;
+  color: rgb(255, 89, 89);
+}
+.card {
+  align-items: space-around;
+  border: 1px solid black;
+  height: 480px;
+  width: 450px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+.flippedCard {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(61, 82, 199, 0.52),
+      rgba(136, 134, 38, 0.73)
+    ),
+    url("images/guesspic.jpeg");
+}
+/* .celebrityImage {
+  background-image: url("images/pic1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+} */
+form {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+button {
+  align-self: center;
+  cursor: pointer;
+}
+.ask {
+  margin-top: -50px;
+  padding-bottom: 30px;
+}
+.guess {
+  margin-bottom: -80px;
+  /* margin-top: 200px; */
+}
+.btnAsk {
+  background-color: rgba(133, 241, 196, 0.63);
+  font-family: "Press Start 2P", sans-serif;
+  width: 150px;
+  height: 50px;
+}
+.btnGuess {
+  background-color: rgb(255, 150, 109);
+  font-family: "Press Start 2P", sans-serif;
+  width: 150px;
+  height: 50px;
+}
+
+.askInputField {
+  text-align: center;
+  background-color: rgb(246, 251, 172);
+  font-family: "Press Start 2P", sans-serif;
+  color: black;
+  align-self: center;
+  height: 40px;
+  width: 300px;
+}
+.guessInputField {
+  font-family: "Press Start 2P", sans-serif;
+  text-align: center;
+  width: 250px;
+  align-self: center;
+  height: 40px;
+
+  background-color: rgb(255, 210, 87);
+}
+.timerBox {
+  background-color: rgb(0, 128, 64);
+  border: 1px solid black;
+  width: 200px;
+  height: 70px;
+  text-align: center;
+  padding: 10px;
+}
+.timerBoxLast5 {
+  background-color: rgb(240, 0, 0);
+  border: 1px solid black;
+  width: 200px;
+  height: 70px;
+  text-align: center;
+  padding: 10px;
+}
+.timer {
+  text-align: center;
+  padding-right: 30px;
+}
+.btnReset {
+  background-color: teal;
+  font-family: "Press Start 2P", sans-serif;
+  text-align: center;
+  padding-top: 5px;
+  margin: 20px;
+  font-size: 20px;
+  width: 160px;
+  height: 50px;
+}
+
+@media all and (min-width: 1120px) and (max-width: 1200px) {
+  .left {
+    margin: 10px;
+  }
+  .right {
+    margin: 10px;
+  }
+  strong {
+    background-color: rgb(43, 128, 226);
+    color: black;
+  }
+}
+
+@media all and (min-width: 875px) and (max-width: 1120px) {
+  .left {
+    margin-right: 70px;
+  }
+  .right {
+    margin-left: 70px;
+    text-align: center;
+  }
+  strong {
+    background-color: rgb(43, 128, 226);
+    color: black;
+  }
+}
+/* //do I need to have it responsive to all screens? */

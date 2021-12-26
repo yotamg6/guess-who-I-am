@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess Who I am</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="left">
+      <div class="instructions">
+        <p>
+          <p>THE GOAL IS TO GUESS</p> <p>WHO IS THE CELEBRITY</p>  <p> BEHIND THE CARD</p>  <br> <p>
+            <P>START BY ASKING QUESTIONS</p><p>OF "YES" AND "NO"</p> 
+        </p>
+      </div>
+    </div>
+    <div class="central">
+      <h1>GUESS WHO I AM!</h1>
+      <div class="card flippedCard">
+        <form>
+          <div class="ask container">
+            <input
+              type="text"
+              class="askInputField"
+              name=""
+              placeholder="ASK A QUESTION"
+            />
+            <button class="btnAsk" type="text">ASK ME!</button>
+          </div>
+          <div class="guess container">
+            <input
+              type="text"
+              class="guessInputField"
+              name=""
+              placeholder="NAME OF CELEBRITY"
+            />
+            <button class="btnGuess" type="text">I KNOW WHO YOU ARE!</button>
+          </div>
+        </form>
+      </div>
+      <p class="timerBox">
+        YOUR TIME WILL END IN &nbsp <span class="timer">02:00</span>
+      </p>
+      <button class="btnReset">RESTART</button>
+    </div>
+    <div class="right">
+      <div class="message">
+        <p>START GUESSING...</p><p><strong>HINT</strong>:BEGIN WITH QUESTIONS</p><p>ABOUT THE PERSON'S GENDER</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
