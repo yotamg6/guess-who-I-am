@@ -1,6 +1,3 @@
-// before submitting: remove all consolelogs, reset the time to 120
-
-//select elements
 const btnAsk = document.querySelector(".btnAsk");
 const btnGuess = document.querySelector(".btnGuess");
 const btnReset = document.querySelector(".btnReset");
