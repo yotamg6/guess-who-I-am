@@ -113,7 +113,6 @@ const celebrities = {
   },
 };
 
-///
 btnAsk.addEventListener("click", getInput);
 btnGuess.addEventListener("click", getInput);
 btnReset.addEventListener("click", reset);
@@ -237,7 +236,6 @@ function reset() {
   indicator = "reset";
   toggleMessage(indicator);
   messageBox.textContent = `LET'S HAVE ANOTHER ROUND!`;
-  // time = 0;
   clickCounter = 0;
   timer = null;
   ranNum = null;
