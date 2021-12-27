@@ -147,7 +147,7 @@ function getInput(e) {
     toggleMessage(indicator);
     messageBox.textContent =
       "THE GAME IS OVER. PLEASE PRESS THE RESTART BUTTON TO PLAY AGAIN";
-  } else if (clickCounter == 0) {
+  } else {
     messageBox.textContent =
       "PLEASE ASK A QUESTION \nOR GUESS WHO THE CELEBRITY IS";
     indicator = "wrong";
